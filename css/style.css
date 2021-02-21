@@ -9,18 +9,14 @@
   --fss: 25px; /* Greetings and Weather widger */
   --fses: 16px; /* Links List */
 
-
-  --accent: #03745b; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #011810; /* Secondary Foreground color */
-  --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
-
-
-  
+  /* Light theme  */
+  --accenttt :linear-gradient(to right, #a8ff78, #78ffd6);
+  --accentt :linear-gradient(to right,  #ff416c, #ff4b2b);
+  --accent: linear-gradient(45deg, #00d2ff 0%, #3a47d5 100%); /* Hover color */
+  --bg: #f5f5f5; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #3a3a3a; /* Sceondary Foreground color */
 
   /* Image background  */
 
@@ -30,28 +26,16 @@
     to make the filter to your own */
 
   /* --imgbg: url(/img/wal.jpg); */
-
+  --imgcol: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
   ); /* Filter color */
 }
-
-/* Light theme  */
-.darktheme {
-    /* Light theme  */
-    --accent: #03745b; /* Hover color */
-    --bg: #f5f5f5; /* Background color */
-    --sbg: #e4e6e6; /* Cards color */
-    --fg: #3a3a3a; /* Foreground color */
-    --sfg: #3a3a3a; /* Sceondary Foreground color */
-    --imgcol: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-  ); /* Filter color */
-}
-
 
 /* Dark theme  */
 .darktheme {
-  --accent: #4b8ec4; /* Hover color */
+  /* --accentt : linear-gradient(to right, #ee0979, #ff6a00); */
+  --accent: linear-gradient(235deg, #11998e, #38ef7d);; /* Hover color */
   --bg: #19171a; /* Background color */
   --sbg: #201e21; /* Cards color */
   --fg: #d8dee9; /* Foreground color */
@@ -243,7 +227,7 @@ body {
   grid-column: 3;
 }
 .buttonLink__link:hover {
-  background-color: var(--accent);
+  background: var(--accent);
 }
 .buttonLink__link:hover svg {
   stroke: var(--sfg);
@@ -280,7 +264,11 @@ body {
   font-weight: bold;
 }
 .list__link:hover {
-  background-color: var(--accent);
+  background: var(--accentt);
+  color: var(--sfg);
+}
+.list__linkk:hover {
+  background: var(--accenttt);
   color: var(--sfg);
 }
 
